@@ -36,36 +36,47 @@ Before running the script, ensure the following packages are installed:
 Install the required packages using pip:
 ```bash
 pip install selenium beautifulsoup4 lxml pandas
+```
 
-  
-**🏃 How to Run the Script**
-**Clone the Repository:**
-  git clone https://github.com/YourUsername/Bangbet-Web-Scraper.gitSet up ChromeDriver:
-Download and install ChromeDriver for your browser. Ensure the ChromeDriver is in your system path.
+## 🏃 How to Run the Script
 
-**Run the Python Script:**
-  python bangbet_scraper.py
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/YourUsername/Bangbet-Web-Scraper.git
+   ```
 
-**View Result**s:
-The scraped data will be saved as BANGBET.csv in the specified directory.
+2. **Set up ChromeDriver**:  
+   Download and install [ChromeDriver](https://sites.google.com/a/chromium.org/chromedriver/) for your browser. Ensure the ChromeDriver is in your system path.
 
-**📁 Output**
-The output CSV file (BANGBET.csv) contains the following fields:
+3. **Run the Python Script**:
+   ```bash
+   python bangbet_scraper.py
+   ```
 
-**TIME: The match time.
-HOME TEAM: The home team in the match.
-AWAY TEAM: The away team in the match.
-HOME ODD: Odds for the home team to win.
-DRAW ODD: Odds for a draw.
-AWAY ODD: Odds for the away team to win.
-BOOKMAKER: The bookmaker name (Bangbet).**
+4. **View Results**:  
+   The scraped data will be saved as `BANGBET.csv` in the specified directory.
 
-**🔧 Future Improvements**
-Expand to Other Sports: Scrape data from other sports like basketball or tennis.
-**Error Handling**: Add more robust error handling for page load issues or website changes.
-**Enhance Efficiency:** Improve the script’s speed by optimizing scrolling and data extraction techniques.
-**📝 License**
-This project is licensed under the MIT License. See the LICENSE file for more details.
-**
-🤝 Contributing**
+## 📁 Output
+
+The output CSV file (`BANGBET.csv`) contains the following fields:
+- **TIME**: The match time.
+- **HOME TEAM**: The home team in the match.
+- **AWAY TEAM**: The away team in the match.
+- **HOME ODD**: Odds for the home team to win.
+- **DRAW ODD**: Odds for a draw.
+- **AWAY ODD**: Odds for the away team to win.
+- **BOOKMAKER**: The bookmaker name (Bangbet).
+
+## 🔧 Future Improvements
+
+- **Expand to Other Sports**: Scrape data from other sports like basketball or tennis.
+- **Error Handling**: Add more robust error handling for page load issues or website changes.
+- **Enhance Efficiency**: Improve the script’s speed by optimizing scrolling and data extraction techniques.
+
+## 📝 License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+## 🤝 Contributing
+
 Feel free to contribute by opening issues, suggesting improvements, or submitting pull requests. All feedback is welcome!

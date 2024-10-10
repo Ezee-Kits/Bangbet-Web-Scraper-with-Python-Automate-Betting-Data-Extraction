@@ -1,34 +1,42 @@
-**Bangbet Web Scraper with Python: Automate Betting Data Extraction**
-This Python script automates the extraction of soccer betting data from Bangbet. It scrapes match times, team names, and betting odds (home, draw, away) from the Bangbet website, providing a quick and efficient way to gather betting data for further analysis.
+# Bangbet Web Scraper with Python: Automate Betting Data Extraction
 
-**📌 Features**
-Automated Betting Data Scraping: Extracts match times, teams, and odds from Bangbet’s soccer section.
-CSV Output: Saves the data into a CSV file for easy access and analysis.
-Headless Browser: Runs in a headless mode (no GUI), making the scraping process more efficient.
-Handles Pagination: Automatically scrolls and loads more matches, ensuring complete data collection.
-Duplicate Removal: Detects and removes duplicate records to maintain clean datasets.
+This Python script automates the extraction of soccer betting data from **Bangbet**. It scrapes match times, team names, and betting odds (home, draw, away) from the Bangbet website, providing a quick and efficient way to gather betting data for further analysis.
 
-**🚀 How It Works**
+## 📌 Features
+
+- **Automated Betting Data Scraping**: Extracts match times, teams, and odds from Bangbet’s soccer section.
+- **CSV Output**: Saves the data into a CSV file for easy access and analysis.
+- **Headless Browser**: Runs in a headless mode (no GUI), making the scraping process more efficient.
+- **Handles Pagination**: Automatically scrolls and loads more matches, ensuring complete data collection.
+- **Duplicate Removal**: Detects and removes duplicate records to maintain clean datasets.
+
+## 🚀 How It Works
+
 The scraper visits the Bangbet sports betting page, extracts soccer match details, and saves the data in a structured CSV format. The script scrolls through the available matches and loads additional data by clicking the "Load More" button, ensuring all available matches are scraped.
 
-**Key Steps:**
-**Headless Browser Setup:** The script uses a headless Selenium browser to navigate the Bangbet website.
-**Click and Scroll:** It clicks the "Today" section to load today's matches and scrolls through pages to capture all match data.
-**Data Scraping**: Using lxml, the script extracts match times, home/away teams, and betting odds.
-**Data Storage:** The scraped data is saved as a CSV file for easy access and analysis.
-**Duplicate Handling:** Ensures no duplicate records in the final output file.
+### Key Steps:
 
-**🛠️ Requirements**
+1. **Headless Browser Setup**: The script uses a headless Selenium browser to navigate the Bangbet website.
+2. **Click and Scroll**: It clicks the "Today" section to load today's matches and scrolls through pages to capture all match data.
+3. **Data Scraping**: Using `lxml`, the script extracts match times, home/away teams, and betting odds.
+4. **Data Storage**: The scraped data is saved as a CSV file for easy access and analysis.
+5. **Duplicate Handling**: Ensures no duplicate records in the final output file.
+
+## 🛠️ Requirements
+
 Before running the script, ensure the following packages are installed:
 
-Python 3.x
-Selenium
-BeautifulSoup4
-lxml
-pandas
-ChromeDriver (or the appropriate driver for your browser)
+- **Python 3.x**
+- **Selenium**
+- **BeautifulSoup4**
+- **lxml**
+- **pandas**
+- **ChromeDriver** (or the appropriate driver for your browser)
+
 Install the required packages using pip:
-  pip install selenium beautifulsoup4 lxml pandas
+```bash
+pip install selenium beautifulsoup4 lxml pandas
+
   
 **🏃 How to Run the Script**
 **Clone the Repository:**
